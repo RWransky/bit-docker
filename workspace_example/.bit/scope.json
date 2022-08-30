@@ -1,0 +1,10 @@
+{
+    "name": "workspace_example",
+    "remotes": {},
+    "version": "1.0.338",
+    "lanes": {
+        "current": "main",
+        "tracking": [],
+        "new": []
+    }
+}
