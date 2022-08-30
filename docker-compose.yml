@@ -1,0 +1,20 @@
+version: "3.9"
+
+services:
+  bit:
+    image: rwransky/bit-docker
+    stdin_open: true
+    tty: true
+    volumes:
+      - ./workspace_example:/workspace_example
+    ports:
+      - 3000:3000
+    environment:
+      - BIT_ORG=org_name
+      - WORKSPACE_DIRECTORY=workspace_example
+      - WORKSPACE_TEMPLATE=react
+      - DEFAULT_SCOPE=scope_example
+      - INIT_WORKSPACE=false
+      - REPORT_ANALYTICS=false
+      - REPORT_ERRORS=false
+      - NO_WARNINGS=true
