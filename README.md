@@ -66,7 +66,7 @@ teambit.mdx/mdx
 
 # Use
 ## Building/Pulling Image
-From the base Dockerfile: `docker build -t bit .`
+From the base Dockerfile: `docker build -t bit --platform linux/x86_64 .`
 From Docker Hub: `docker pull rwransky/bit-docker:latest`
 
 ## Initializing New Workspace
